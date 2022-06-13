@@ -2,7 +2,7 @@
 
 gentoo install systemd is very difficult for gentoo biginner user.
 
-this box is 
+this box is building systemd only execute vagrant up command.
 
 ## time
 
@@ -38,7 +38,7 @@ vagrant halt
 vagrant package --output out/gentoo_systemd.box
 
 # check sum upload時に必要。
-sha256sum out/gentoo_systemd.box
+sha256sum out/gentoo_systemd.box | cut -d ' ' -f 1
 
 OtogawaKatsutoshi/Gentoo_systemd 
 
@@ -46,11 +46,6 @@ OtogawaKatsutoshi/Gentoo_systemd
 
 ## version
 
-build date yyyy.mm.dd.
-
-```bash
-```
-
-config.ssh.insert_key = false
+build date v{yyyy.mm.dd}.
 
 [openrcとsystemdのサービス対応](https://wiki.gentoo.org/wiki/Systemd/ja)
